@@ -7,8 +7,6 @@
   --text-main: #e5e7eb;
   --text-muted: #9ca3af;
 }
-
-/* RESET */
 * {
   margin: 0;
   padding: 0;
@@ -20,8 +18,6 @@ body {
   background: linear-gradient(135deg, #020617, #0b1120);
   color: var(--text-main);
 }
-
-/* HEADER */
 .header {
   position: sticky;
   top: 0;
@@ -52,8 +48,6 @@ body {
 .navbar a.active {
   color: var(--primary);
 }
-
-/* HOME */
 .home {
   min-height: 100vh;
   padding: 80px 10%;
@@ -109,15 +103,24 @@ body {
   box-shadow: 0 0 25px var(--secondary);
 }
 
-/* IMAGE */
-.home-img img {
-  width: 320px;
+.home-img {
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
-  border: 4px solid var(--primary);
-  box-shadow: 0 0 40px rgba(56, 189, 248, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* SECTION */
+.home-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 35%;
+  border-radius: 50%;
+  border: 4px solid #38bdf8;
+  box-shadow: 0 0 30px rgba(56, 189, 248, 0.7);
+}
 section {
   padding: 100px 10%;
 }
@@ -131,8 +134,6 @@ section {
 .heading span {
   color: var(--primary);
 }
-
-/* SERVICES */
 .services-container {
   display: flex;
   gap: 30px;
@@ -161,8 +162,6 @@ section {
   border-color: var(--primary);
   box-shadow: 0 0 25px rgba(56, 189, 248, 0.2);
 }
-
-/* PORTFOLIO */
 .portfolio-container {
   display: flex;
   gap: 30px;
@@ -190,8 +189,6 @@ section {
   color: var(--primary);
   font-size: 22px;
 }
-
-/* CONTACT */
 .contact form {
   max-width: 600px;
   margin: auto;
@@ -218,11 +215,38 @@ section {
   text-decoration: none;
   font-weight: 600;
 }
-
-/* FOOTER */
 .footer {
   background: #020617;
   padding: 20px;
   text-align: center;
   color: var(--text-muted);
 }
+
+.about {
+  padding: 120px 10%;
+}
+
+.about-content {
+  max-width: 900px;   
+  margin: 0 auto;     
+}
+
+.about-content h2 {
+  text-align: center;
+  font-size: 42px;
+  margin-bottom: 40px;
+}
+
+.about-content h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #38bdf8;
+}
+
+.about-content p {
+  font-size: 18px;
+  line-height: 1.8;   
+  letter-spacing: 0.4px;
+  color: #e5e7eb;
+}
+
